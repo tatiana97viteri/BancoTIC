@@ -1,0 +1,99 @@
+.container-fluid {
+    background-color: rgba(0,0,0,.1);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    color: white;
+}
+
+.menu {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: large;
+}
+
+.img-fluid{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin: 0%;
+}
+
+i{
+    color:white;
+}
+
+.container-banner{
+    display:inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.banner{
+    /* background-color: rgba(0,0,0,.1); */
+    z-index: 1;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.description{
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: 20px;
+    color: white;
+    text-align: center;    
+}
+
+.container-entities{
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.btn-entity{
+    background: #D2E7E8;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    padding: 20px;
+    padding-top: 0;
+}
+
+.container-allies{
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.img-thumbnail{
+    height: 80px;
+    border: 0;
+}
+
+.card-own{
+    background-color: #01B686;
+}
+
+.card-footer{
+    background-color: black;
+    text-align: center;
+}
+
+.card-body-footer{
+    display: flex;
+    justify-content: space-around;
+}

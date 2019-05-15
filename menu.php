@@ -1,15 +1,39 @@
-<!-- menu -->
-<div class="container-fluid">
-    <div class="menu">
-        <div class="logo"><h1>Banco TIC</h1></div>
-        <ul class="nav nav-tabs justify-content-flex-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-folder-open fa-3x"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user fa-3x"></i></a>
-            </li>
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+      <a class="navbar-brand" href="#">Fixed navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Disabled</a>
+          </li>
         </ul>
-    </div>
-</div>
-<!-- menu -->
+        <ul class="nav navbar-nav pull-sm-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Proyecto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+    </ul>
+      </div>
+      
+    </nav>

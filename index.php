@@ -126,6 +126,7 @@
             <!-- <img src="..." alt="..." class="img-thumbnail"> -->
         </div>
     </section>
+
     
     <?php include 'footer.php';?>
 

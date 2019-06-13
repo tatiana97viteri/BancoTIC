@@ -9,51 +9,116 @@ html {
   font-weight: 400;
   line-height: 1.8em;
 }
-
-.pimg1 {
+.parallax-slider {
   position: relative;
-  background-position: center;
+}
+
+.slider-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.slide {
   background-size: cover;
-  background-repeat: no-repeat;
-
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: inline-block;
+  width: 100%;
+  height: 350px;
+  flex-shrink: 0;
+  transition: 0.9s ease-in-out transform;
+  backface-visibility: hidden;
 }
 
-.pimg1 {
-  background-image: url("../img/image1.jpg");
-  min-height: 84%;
+.slide-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.slide-indicator ol {
+  display: inline-block;
+}
+.slide-indicator li {
+  display: inline-block;
+  height: 4px;
+  width: 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
+.slide-indicator li:hover {
+  background: #c4c4c4;
+}
+
+.slide-indicator li.active {
+  background: #c4c4c4;
+}
+
+.slide::before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+}
+
+.content {
+  display: inline-block;
+  width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  white-space: normal;
+  color: #fff;
+  transform: translate(-5px);
+}
+
+.caption {
+  padding: 20px;
+  transition: 0.4s;
+  transition-delay: 0.8s;
+  opacity: 0;
+  transform: translatey(200%);
+}
+.caption h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.slide-active .caption {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+.home {
+  height: 1000px;
+  position: relative;
+}
+
+.slide1 {
+  background: url("https://livedemo00.template-help.com/landing_61143/images/slide-03-1920x1000.jpg")
+    top center;
+}
+
+.slide2 {
+  background: url("https://livedemo00.template-help.com/landing_61143/images/slide-01-1920x1000.jpg")
+    top center;
+}
+
+.slide3 {
+  background: url("https://livedemo00.template-help.com/landing_61143/images/slide-02-1920x1000.jpg")
+    top center;
+}
 .section {
   text-align: center;
-  padding: 50px;
+  margin: 30px;
 }
 
-.ptext {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  font-size: 27px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.ptext .border {
-  background-color: #111;
-  color: #fff;
-}
-
-.ptext .border.trans {
-  background-color: transparent;
-}
-
-@media (max-width: 568px) {
-  .pimg1 {
-    background-attachment: scroll;
-  }
-}
 /*Menu*/
 
 /*card*/
@@ -67,14 +132,6 @@ html {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-}
-
-h1.heading {
-  color: #fff;
-  font-size: 1.15em;
-  font-weight: 900;
-  margin: 0 0 0.5em;
-  color: #505050;
 }
 
 .card {
@@ -97,8 +154,7 @@ h1.heading {
   overflow: hidden;
 }
 .img-card img {
-  width: 55%;
-  padding-top: 10px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   transition: all 0.25s ease;
@@ -106,12 +162,8 @@ h1.heading {
 .card-content {
   padding: 15px;
   text-align: left;
-  height: 200px;
 }
 .card-title {
-  margin-top: 0px;
-  font-weight: 700;
-  font-size: 1.65em;
   text-align: center;
 }
 .card-title a {
@@ -127,6 +179,10 @@ h1.heading {
   font-weight: 600;
   text-transform: uppercase;
 }
+.card-content p {
+  color: black;
+}
+
 /*entidades*/
 .container-allies {
   padding-top: 30px;
@@ -135,7 +191,7 @@ h1.heading {
   justify-content: space-evenly;
 }
 .img-thumbnail {
-  height: 80px;
+  height: 60px;
   border: 0;
 }
 /*footer*/
@@ -181,3 +237,154 @@ h1.heading {
     opacity: 1;
   }
 }
+/*empresas*/
+.parallax-slider {
+  position: relative;
+}
+
+.slider-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.slide {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+  transition: 0.9s ease-in-out transform;
+  backface-visibility: hidden;
+}
+
+.slide-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.slide-indicator ol {
+  display: inline-block;
+}
+.slide-indicator li {
+  display: inline-block;
+  height: 4px;
+  width: 20px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.slide-indicator li:hover {
+  background: #c4c4c4;
+}
+
+.slide-indicator li.active {
+  background: #c4c4c4;
+}
+
+.slide::before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+}
+
+.content {
+  display: inline-block;
+  width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  white-space: normal;
+  color: #fff;
+  transform: translate(-5px);
+}
+
+.caption {
+  padding: 20px;
+  transition: 0.4s;
+  transition-delay: 0.8s;
+  opacity: 0;
+  transform: translatey(200%);
+}
+.caption h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.slide-active .caption {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+.slide1 {
+  background: url("https://livedemo00.template-help.com/landing_61143/images/slide-03-1920x1000.jpg")
+    top center;
+}
+
+.slide2 {
+  background: url("https://livedemo00.template-help.com/landing_61143/images/slide-01-1920x1000.jpg")
+    top center;
+}
+
+.slide3 {
+  background: url("https://livedemo00.template-help.com/landing_61143/images/slide-02-1920x1000.jpg")
+    top center;
+}
+/*EmpresaParallax*/
+
+.pimg1 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("../img/image1.jpg");
+  min-height: 40%;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border {
+  background-color: #111;
+  padding: 1%;
+  color: #fff;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+  .pimg1 {
+    background-attachment: scroll;
+  }
+}
+/*categorias*/
+fieldset {
+  border: thin solid grey;
+  margin: 0 auto;
+  padding: 2em;
+  width: 75%;
+}
+/*Search*/

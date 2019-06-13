@@ -1,5 +1,4 @@
-
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark">
       <a class="navbar-brand" href="#">Fixed navbar</a>
       <button
         class="navbar-toggler"
@@ -34,9 +33,8 @@
         <a class="nav-link" data-toggle="modal" href="#modalLogin">Inicio</a>
       </li>
     </ul>
-  </div>
-      
-    </nav>
+  </div>    
+</nav>
 
     <div class="modal fade bd-example-modal-xl" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
